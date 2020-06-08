@@ -1,0 +1,17 @@
+.carousel img {
+  height: 60vh;
+}
+
+.line {
+  margin: auto;
+  border-bottom: 1px solid #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hotArticle-img a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
