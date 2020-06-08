@@ -1,3 +1,19 @@
+.nav-item:hover {
+  border-bottom: 2px solid #999999;
+}
+
+.nav-item:hover .nav-link {
+  -webkit-animation: bounceIn;
+          animation: bounceIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .carousel img {
   height: 60vh;
 }

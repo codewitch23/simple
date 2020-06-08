@@ -1,8 +1,21 @@
+.nav-item:hover{
+    border-bottom: 2px solid #999999;
+
+    .nav-link{
+        animation: bounceIn;
+        animation-duration: 1s;
+    }
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+}
 .carousel {
     img {
         height: 60vh
     }
 }
+
 
 .line {
     margin: auto;
@@ -17,3 +30,4 @@
         color: #f3f3f3;
     }
 }
+
