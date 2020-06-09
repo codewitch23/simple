@@ -31,3 +31,22 @@
   color: #f3f3f3;
 }
 
+#latestArticle .top10 {
+  height: 60px;
+  align-items: center;
+  display: flex;
+}
+
+#latestArticle .top10-item {
+  border-left: 1px solid #999;
+}
+
+#latestArticle .top10:hover {
+  background: #9fcdff;
+}
+
+#latestArticle a {
+  align-items: center;
+  text-decoration: none;
+}
+
