@@ -73,7 +73,19 @@
                     </div>
                 </div>
             </div>
-
+            <div class="col-4 top10-item ">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-2 top10 pl-4 ">
+                        <a href="#">1</a>
+                    </div>
+                    <div class="col-6 top10 pl-4 justify-content-center">
+                        <a href="#">need for speed</a>
+                    </div>
+                    <div class="col-4 top10 justify-content-center ">
+                        <a href="#" >8</a>
+                    </div>
+                </div>
+                <hr>
             </div>
         </div>
     </div>
