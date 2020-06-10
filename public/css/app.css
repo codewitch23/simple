@@ -50,3 +50,22 @@
   text-decoration: none;
 }
 
+.article-body {
+  border-right: 1px solid #999999;
+  background: #333333;
+}
+
+.img-size {
+  max-height: 150px;
+}
+
+.border-round {
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+.btn-size {
+  display: flex;
+  height: 40px;
+}
+
