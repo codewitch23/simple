@@ -15,37 +15,19 @@
     <title>Document</title>
 </head>
 <body>
-{{---------------------------------------------
-                   <<Navbar>>
-----------------------------------------------}}
-<nav class="navbar navbar-expand-lg navbar-light bg-light py-5">
-    <div class="container ">
-        <a class="navbar-brand text-danger site-logo" href="#">GameWars</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
-                <li class="nav-item active px-4">
-                    <a class="nav-link" href="#">Home<span class="line sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item px-4">
-                    <a class="nav-link" href="#">Aticles</a>
-                </li>
-                <li class="nav-item  px-4">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
+
+@include('layouts.nav');
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 footer">
+                <h1 class="display-4 ">GameWar</h1>
+            </div>
         </div>
     </div>
-</nav>
+</footer>
 
-@yield('header')
-@yield('onfire')
-@yield('hotArticle')
-@yield('latestArticle')
-@yield('articles')
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

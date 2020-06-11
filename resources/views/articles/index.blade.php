@@ -2,7 +2,9 @@
 @section('articles')
     <div class="container ">
         <div class="row pt-2">
-            <div class="col-md-9 col-sm-12 ">
+            <div class="col-md-9 col-sm-12 "data-aos="fade-right"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
                 <div class="col-12">
                     <div class="row ">
                         <div class="col-8 ">
@@ -21,7 +23,9 @@
                     <hr>
                 </div>
             </div>
-            <div class="col-3  d-md-flex d-none border-round">
+            <div class="col-3  d-md-flex d-none border-round"data-aos="fade-left"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
                 <div class="col-12  justify-content-center d-flex flex-column">
                     <div class="dropdown-platform py-2 ">
                         <button class="btn btn-outline-success dropdown-toggle btn-block" data-toggle="dropdown">All
@@ -49,5 +53,5 @@
 
         </div>
     </div>
-    </div>
+
 @endsection
