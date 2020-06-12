@@ -16,7 +16,8 @@ class ArticleController extends Controller
 
     public function create()
     {
-        //
+        return view('articles.create');
+
     }
 
     public function store(Request $request)
