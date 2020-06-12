@@ -1,4 +1,5 @@
 @extends('layout')
+
 @section('content')
     <div class="container">
         <div class="row">
@@ -15,6 +16,7 @@
             </div>
         </div>
     </div>
+
 
     @include('layouts.hotArticle')
     <div class="container ">
@@ -65,7 +67,9 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
 
