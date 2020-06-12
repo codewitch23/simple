@@ -11,7 +11,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
     <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href={{asset('css/app.css')}}>
     <title>Document</title>
 </head>
 <body>

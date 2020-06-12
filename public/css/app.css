@@ -79,3 +79,9 @@ footer .main-footer {
   bottom: 0;
 }
 
+.justify-center {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+

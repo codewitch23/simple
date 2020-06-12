@@ -14,6 +14,9 @@
                 <li class="nav-item px-4">
                     <a class="nav-link" href="/articles">Aticles</a>
                 </li>
+                <li class="nav-item px-4">
+                    <a class="nav-link" href="/articles/create">Create Article</a>
+                </li>
                 <li class="nav-item  px-4">
                     <a class="nav-link" href="#">About</a>
                 </li>
