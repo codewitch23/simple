@@ -15,7 +15,7 @@
 }
 
 .carousel img {
-  height: 60vh;
+  height: 50vh;
 }
 
 .line {
@@ -69,7 +69,13 @@
   height: 40px;
 }
 
-.footer h1 {
+footer h1 {
   color: #d02d1e;
+}
+
+footer .main-footer {
+  height: 150px;
+  background: #333;
+  bottom: 0;
 }
 

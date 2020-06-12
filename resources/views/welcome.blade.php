@@ -1,6 +1,6 @@
 @extends('layout')
-
-@include('layouts.carousel')
+@section('content')
+    @include('layouts.carousel')
     {{---------------------------------------------
                       <<On-fire-title>>
     ----------------------------------------------}}
@@ -13,54 +13,52 @@
             </div>
         </div>
     </div>
-@include('layouts.hotArticle')
+    @include('layouts.hotArticle')
 
-{{---------------------------------------------
-                  <<latest-article>>
-----------------------------------------------}}
-<section id="latestArticle">
-    <hr class="w-75">
-    <div class="row">
-        <div class="col-12 pb-5">
-            <h1 class="display-4 text-center"> Latest Article</h1>
+    {{---------------------------------------------
+                      <<latest-article>>
+    ----------------------------------------------}}
+    <section id="latestArticle">
+        <hr class="w-75">
+        <div class="row">
+            <div class="col-12 pb-5">
+                <h1 class="display-4 text-center"> Latest Article</h1>
+            </div>
         </div>
-    </div>
-    <hr class="w-75">
+        <hr class="w-75">
 
-    <div class="container ">
-        <div class="row no-gutters ">
-            <div class="col-8 no-gutters">
-                <div class="col-12  ">
-                    <div class="row no-gutters">
-                        <div class="col-4">
-                            <img src="img/need.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-8 px-4 align-self-center">
-                            <a href=""><h1>Title</h1></a>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur distinctio
-                                eligendi illum molestias nulla odio optio, quasi rem repudiandae!
-                            </p>
+        <div class="container ">
+            <div class="row no-gutters ">
+                <div class="col-8 no-gutters">
+                    <div class="col-12  ">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="img/need.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-8 px-4 align-self-center">
+                                <a href=""><h1>Title</h1></a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur distinctio
+                                    eligendi illum molestias nulla odio optio, quasi rem repudiandae!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4 top10-item ">
-                <div class="row no-gutters justify-content-center">
-                    <div class="col-2 top10 pl-4 ">
-                        <a href="#">1</a>
+                <div class="col-4 top10-item ">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-2 top10 pl-4 ">
+                            <a href="#">1</a>
+                        </div>
+                        <div class="col-6 top10 pl-4 justify-content-center">
+                            <a href="#">need for speed</a>
+                        </div>
+                        <div class="col-4 top10 justify-content-center ">
+                            <a href="#" >8</a>
+                        </div>
                     </div>
-                    <div class="col-6 top10 pl-4 justify-content-center">
-                        <a href="#">need for speed</a>
-                    </div>
-                    <div class="col-4 top10 justify-content-center ">
-                        <a href="#" >8</a>
-                    </div>
+                    <hr>
                 </div>
-                <hr>
             </div>
         </div>
-    </div>
-
-
-
+@endsection

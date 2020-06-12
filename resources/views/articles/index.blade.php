@@ -1,8 +1,27 @@
 @extends('layout')
-@section('articles')
+
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                @include('layouts.carousel')
+            </div>
+            <div class="col-4 border border-info d-flex flex-column align-items-center justify-content-center">
+                <h1>score</h1>
+                <p>
+                <h1>The last Of Us</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto distinctio perspiciatis
+                rerum. Ab doloribus eius quaerat, sapiente tempore voluptates!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    @include('layouts.hotArticle')
     <div class="container ">
         <div class="row pt-2">
-            <div class="col-md-9 col-sm-12 "data-aos="fade-right"
+            <div class="col-md-9 col-sm-12 " data-aos="fade-right"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine">
                 <div class="col-12">
@@ -23,7 +42,7 @@
                     <hr>
                 </div>
             </div>
-            <div class="col-3  d-md-flex d-none border-round"data-aos="fade-left"
+            <div class="col-3  d-md-flex d-none border-round" data-aos="fade-left"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine">
                 <div class="col-12  justify-content-center d-flex flex-column">
