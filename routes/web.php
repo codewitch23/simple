@@ -17,7 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/articles','ArticleController@index');
-//Route::get('/articles/create','ArticleController@create');
-Route::get('/articles/create', function () {
-    return view('articles.create');
-});
+Route::get('/articles/create','ArticleController@create')->name('articles.create');
+

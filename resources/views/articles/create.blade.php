@@ -4,6 +4,7 @@
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-10  ">
+                    <h4>Create article</h4>
                     <div class="form-group " data-aos="fade-right"
                          data-aos-offset="300"
                          data-aos-easing="ease-in-sine">
@@ -33,7 +34,7 @@
                                   cols="30" rows="7"
                                   class="form-control">
                         </textarea>
-                        <button type="submit" class="btn btn-outline-success btn-block mt-3"> Submit</button>
+                        <button type="submit" class="btn btn-outline-success btn-block my-3"> Submit</button>
                     </div>
                 </div>
             </div>
