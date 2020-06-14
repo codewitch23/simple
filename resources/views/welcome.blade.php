@@ -30,18 +30,19 @@
         <div class="container ">
             <div class="row no-gutters ">
                 <div class="col-8 no-gutters">
-                    <div class="col-12  ">
+                    <div class="col-12">
                         <div class="row no-gutters">
-                            <div class="col-4">
-                                <img src="img/need.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-8 px-4 align-self-center">
-                                <a href=""><h1>Title</h1></a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur distinctio
-                                    eligendi illum molestias nulla odio optio, quasi rem repudiandae!
-                                </p>
-                            </div>
+                            @foreach($articles as $article)
+                                <div class="col-4">
+                                    <img src="img/need.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-8 px-4 align-self-center">
+                                    <a href=""><h1>{{$article->title}}</h1></a>
+                                    <p>
+                                        {{$article->excerpt}}
+                                    </p>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -54,7 +55,7 @@
                             <a href="#">need for speed</a>
                         </div>
                         <div class="col-4 top10 justify-content-center ">
-                            <a href="#" >8</a>
+                            <a href="#">8</a>
                         </div>
                     </div>
                     <hr>

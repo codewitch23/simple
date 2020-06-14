@@ -1,7 +1,8 @@
 @extends('layout')
 @section('content')
-    <form method="POST" action="/articles">
+    <form method="POST" action="/articles/{{$articles->id}}">
         @csrf
+        @method('PUT')
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-10  ">
@@ -14,11 +15,11 @@
                                name="title"
                                id="title"
                                class="form-control  ">
-                        @if($errors->has('title'))
-                            <p>
-                                {{$errors->first('title')}}
-                            </p>
-                        @endif
+{{--                        @if($errors->has('title'))--}}
+{{--                            <p>--}}
+{{--                                {{$errors->first('title')}}--}}
+{{--                            </p>--}}
+{{--                        @endif--}}
                     </div>
                     <div class="form-group" data-aos="fade-left"
                          data-aos-offset="200"
@@ -29,9 +30,9 @@
                                   cols="30" rows="3"
                                   class="form-control">
                         </textarea>
-                        @if($errors->has('excerpt'))
-                            <p>{{$errors->first('excerpt')}}</p>
-                        @endif
+{{--                        @if($errors->has('excerpt'))--}}
+{{--                            <p>{{$errors->first('excerpt')}}</p>--}}
+{{--                        @endif--}}
                     </div>
 
                     <div class="form-group" data-aos="fade-right"
@@ -43,15 +44,16 @@
                                   cols="30" rows="7"
                                   class="form-control">
                         </textarea>
-                        @if ($errors->has('body'))
-                            <p>
-                                {{$errors->first('body')}}
-                            </p>
-                        @endif
+{{--                        @if ($errors->has('body'))--}}
+{{--                            <p>--}}
+{{--                                {{$errors->first('body')}}--}}
+{{--                            </p>--}}
+{{--                        @endif--}}
                         <button type="submit" class="btn btn-outline-success btn-block my-3"> Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </form>
+
 @endsection

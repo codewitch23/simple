@@ -74,7 +74,9 @@ footer h1 {
 }
 
 footer .main-footer {
-  height: 150px;
+  overflow-scrolling: auto;
+  display: flex;
+  height: 100px;
   background: #333;
   bottom: 0;
 }
