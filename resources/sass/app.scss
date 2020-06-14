@@ -84,3 +84,28 @@ footer{
     height: 80vh;
     justify-content: center;
 }
+.drak-back{
+    //background: #000000;
+}
+.overlay{
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+
+.content{
+    display: flex;
+    justify-content: center;
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+    color:#f1f1f1;
+}
+.gradient-left{
+    position: absolute;
+    background-image: linear-gradient(90deg, red, yellow);
+    display: flex;
+    width: 100px;
+    height: 450px;
+    left: -20px ;
+
+}

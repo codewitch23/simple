@@ -35,23 +35,26 @@ class ArticleController extends Controller
 
     public function show(Article $article)
     {
-        return view('articles.edit');
+        return view('articles.show',compact('article'));
     }
 
 
     public function edit(Article $article)
     {
-
         return view('articles.edit',compact('article'));
     }
 
     public function update(Request $request, Article $article)
     {
-        //
+        $article->title=request()->title;
+        $article->excerpt=request()->excerpt;
+        $article->body=request()->body;
+        $article->save();
     }
 
     public function destroy(Article $article)
     {
         //
     }
+
 }

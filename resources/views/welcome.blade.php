@@ -37,7 +37,7 @@
                                     <img src="img/need.jpg" alt="" class="img-fluid">
                                 </div>
                                 <div class="col-8 px-4 align-self-center">
-                                    <a href=""><h1>{{$article->title}}</h1></a>
+                                    <a href="{{$article->path()}}"><h1>{{$article->title}}</h1></a>
                                     <p>
                                         {{$article->excerpt}}
                                     </p>

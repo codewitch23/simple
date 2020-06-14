@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    <form method="POST" action="/articles/{{$articles->id}}">
+    <form method="POST" action="/articles/{{$article->id}}">
         @csrf
         @method('PUT')
         <div class="container">
@@ -14,6 +14,7 @@
                         <input type="text"
                                name="title"
                                id="title"
+                               value="{{$article->title}}"
                                class="form-control  ">
 {{--                        @if($errors->has('title'))--}}
 {{--                            <p>--}}
@@ -28,7 +29,7 @@
                         <textarea name="excerpt"
                                   id="excerpt"
                                   cols="30" rows="3"
-                                  class="form-control">
+                                  class="form-control">{{$article->excerpt}}
                         </textarea>
 {{--                        @if($errors->has('excerpt'))--}}
 {{--                            <p>{{$errors->first('excerpt')}}</p>--}}
@@ -42,7 +43,7 @@
                         <textarea name="body"
                                   id="body"
                                   cols="30" rows="7"
-                                  class="form-control">
+                                  class="form-control">{{$article->excerpt}}
                         </textarea>
 {{--                        @if ($errors->has('body'))--}}
 {{--                            <p>--}}

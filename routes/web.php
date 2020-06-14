@@ -9,6 +9,8 @@ Route::get('/', function () {
 Route::get('/articles','ArticleController@index');
 Route::get('/articles/create','ArticleController@create')->name('articles.create');
 Route::post('/articles','ArticleController@store');
-Route::put('/articles/{article}/edit','ArticleController@edit');
+Route::get('/articles/{article}/edit','ArticleController@edit');
+Route::get('/articles/{article}','ArticleController@show')->name('articles.show');
+Route::put('/articles/{article}','ArticleController@update');
 
 
