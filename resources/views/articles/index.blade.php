@@ -24,22 +24,25 @@
             <div class="col-md-9 col-sm-12 " data-aos="fade-right"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine">
-                <div class="col-12">
-                    <div class="row ">
-                        <div class="col-8 ">
-                            <a href=""><h1>Title</h1></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur distinctio
-                                eligendi illum molestias nulla odio optio, quasi rem repudiandae!
-                            </p>
-                        </div>
-                        <div class="col-1 d-flex align-items-center justify-content-center border-left border-info">
-                            <h1>1</h1>
-                        </div>
-                        <div class="col-3 d-flex align-items-center justify-content-center">
-                            <img src="img/need.jpg" alt="" class="img-thumbnail d-flex">
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        @foreach($articles As $article)
+                            <div class="row ">
+                                <div class="col-8 ">
+                                    <a href=""><h1>{{$article->title}}</h1></a>
+                                    <p>{{$article->excerpt}}</p>
+                                </div>
+                                <div
+                                    class="col-1 d-flex align-items-center justify-content-center border-left border-info">
+                                    <h1>1</h1>
+                                </div>
+                                <div class="col-3 d-flex align-items-center justify-content-center">
+                                    <img src="img/need.jpg" alt="" class="img-thumbnail d-flex">
+                                </div>
+                            </div>
+                            <hr>
+                        @endforeach
                     </div>
-                    <hr>
                 </div>
             </div>
             <div class="col-3  d-md-flex d-none border-round" data-aos="fade-left"
@@ -67,9 +70,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 

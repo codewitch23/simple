@@ -10,7 +10,8 @@ class ArticleController extends Controller
 
     public function index()
     {
-        return view('articles.index');
+        $articles=Article::take(4)->latest()->get();
+        return view('articles.index',compact('articles'));
     }
 
 
@@ -21,16 +22,12 @@ class ArticleController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'excerpt' => 'required',
-            'body' => 'required'
-        ]);
-        $articles = new Article();
-        $articles->title = $request->title;
-        $articles->excerpt = $request->excerpt;
-        $articles->body = $request->body;
-        $articles->save();
+        $article=Article::create(request()->validate([
+            'title'=>'required',
+            'excerpt'=>'required',
+            'body'=>'required'
+        ]));
+        return redirect($article->path());
     }
 
     public function show(Article $article)

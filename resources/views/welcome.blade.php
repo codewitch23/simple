@@ -29,6 +29,7 @@
 
         <div class="container ">
             <div class="row no-gutters ">
+
                 <div class="col-8 no-gutters">
                     <div class="col-12">
                         <div class="row no-gutters">
@@ -46,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 top10-item ">
+                <div class="col-4 top10-item  border border-info">
                     <div class="row no-gutters justify-content-center">
                         <div class="col-2 top10 pl-4 ">
                             <a href="#">1</a>

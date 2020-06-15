@@ -102,12 +102,3 @@ footer .main-footer {
   color: #f1f1f1;
 }
 
-.gradient-left {
-  position: absolute;
-  background-image: linear-gradient(90deg, red, yellow);
-  display: flex;
-  width: 100px;
-  height: 450px;
-  left: -20px;
-}
-

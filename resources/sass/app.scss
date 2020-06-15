@@ -1,15 +1,17 @@
-.nav-item:hover{
+.nav-item:hover {
     border-bottom: 2px solid #999999;
 
-    .nav-link{
+    .nav-link {
         animation: bounceIn;
         animation-duration: 1s;
     }
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 2rem;
     font-weight: bold;
 }
+
 .carousel {
     img {
         height: 50vh;
@@ -24,88 +26,89 @@
     flex-direction: row;
     align-items: center;
 }
-.hotArticle-img{
-    a{
+
+.hotArticle-img {
+    a {
         text-decoration: none;
         color: #f3f3f3;
     }
 }
-#latestArticle{
-    .top10{
+
+#latestArticle {
+    .top10 {
         height: 60px;
         align-items: center;
         display: flex;
 
     }
-    .top10-item{
-        border-left: 1px solid #999 ;
+
+    .top10-item {
+        border-left: 1px solid #999;
     }
-    .top10:hover{
+
+    .top10:hover {
         background: #9fcdff;
     }
 
-    a{
+    a {
         align-items: center;
         text-decoration: none;
     }
 }
 
-.article-body{
- border-right: 1px solid #999999;
+.article-body {
+    border-right: 1px solid #999999;
     background: #333333;
-
 }
-.img-size{
+
+.img-size {
     max-height: 150px;
 }
-.border-round{
+
+.border-round {
     border: 1px solid #999999;
     border-radius: 5px;
 }
-.btn-size{
+
+.btn-size {
     display: flex;
     height: 40px;
 }
 
-footer{
-    h1{
+footer {
+    h1 {
         color: #d02d1e;
     }
-    .main-footer{
+
+    .main-footer {
         overflow-scrolling: auto;
         display: flex;
         height: 100px;
-        background:#333;
+        background: #333;
         bottom: 0;
     }
 }
-.justify-center{
+
+.justify-center {
     display: flex;
     height: 80vh;
     justify-content: center;
 }
-.drak-back{
+
+.drak-back {
     //background: #000000;
 }
-.overlay{
+
+.overlay {
     position: relative;
     max-width: 800px;
     margin: auto;
-
-.content{
-    display: flex;
-    justify-content: center;
-    bottom: 40px;
-    position: absolute;
-    width: 100%;
-    color:#f1f1f1;
 }
-.gradient-left{
-    position: absolute;
-    background-image: linear-gradient(90deg, red, yellow);
-    display: flex;
-    width: 100px;
-    height: 450px;
-    left: -20px ;
-
-}
+    .content {
+        display: flex;
+        justify-content: center;
+        bottom: 40px;
+        position: absolute;
+        width: 100%;
+        color: #f1f1f1;
+    }
