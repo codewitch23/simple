@@ -10,4 +10,9 @@ class Article extends Model
         return route('articles.show',$this);
     }
     protected $fillable=['title','excerpt','body'];
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
+
 }
