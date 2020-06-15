@@ -19,51 +19,34 @@
 
 
     @include('layouts.hotArticle')
-    <div class="container ">
-        <div class="row pt-2">
-            <div class="col-md-9 col-sm-12 " data-aos="fade-right"
-                 data-aos-offset="300"
-                 data-aos-easing="ease-in-sine">
-                <div class="row">
-                    <div class="col-12">
-                        @foreach($articles As $article)
-                            <div class="row ">
-                                <div class="col-8 ">
-                                    <a href=""><h1>{{$article->title}}</h1></a>
-                                    <p>{{$article->excerpt}}</p>
-                                </div>
-                                <div
-                                    class="col-1 d-flex align-items-center justify-content-center border-left border-info">
-                                    <h1>1</h1>
-                                </div>
-                                <div class="col-3 d-flex align-items-center justify-content-center">
-                                    <img src="img/need.jpg" alt="" class="img-thumbnail d-flex">
-                                </div>
-                            </div>
-                            <hr>
-                        @endforeach
+    <div class="container">
+        <div class="grid">
+            <div class="main-box border-right border-info ">
+                @foreach($articles as $article)
+                    <div class="inside-box ">
+                        <a href="{{$article->path()}}"><h1>{{$article->title}}</h1></a>
+                        <h1>1</h1>
+                        <img src="img/need.jpg" alt="" class="img-thumbnail ">
                     </div>
-                </div>
+                    <hr>
+                @endforeach
             </div>
-            <div class="col-3  d-md-flex d-none border-round" data-aos="fade-left"
-                 data-aos-offset="300"
-                 data-aos-easing="ease-in-sine">
-                <div class="col-12  justify-content-center d-flex flex-column">
-                    <div class="dropdown-platform py-2 ">
-                        <button class="btn btn-outline-success dropdown-toggle btn-block" data-toggle="dropdown">All
-                            Platform
-                        </button>
-                        <div class="dropdown-menu btn-block py-2 ">
-                            <a href="#" class="dropdown-item dropdown-item  text-center">PC</a>
-                            <a href="#" class="dropdown-item dropdown-item text-center">PS4</a>
-                            <a href="#" class="dropdown-item dropdown-item  text-center">XBOX</a>
-                        </div>
+
+            <div class="side-box ">
+                <div class="dropdown-platform py-2 ">
+                    <button class="btn btn-outline-success dropdown-toggle btn-block" data-toggle="dropdown">All
+                        Platform
+                    </button>
+                    <div class="dropdown-menu btn py-2 ">
+                        <a href="#" class="dropdown-item dropdown-item  text-center">PC</a>
+                        <a href="#" class="dropdown-item dropdown-item text-center">PS4</a>
+                        <a href="#" class="dropdown-item dropdown-item  text-center">XBOX</a>
                     </div>
                     <div class="dropdown-gener">
                         <button class="btn btn-outline-success dropdown-toggle btn-block" data-toggle="dropdown">
                             All Gener
                         </button>
-                        <div class="dropdown-menu btn-block">
+                        <div class="dropdown-menu ">
                             <a href="#" class="dropdown-item dropdown-item text-center">2D</a>
                             <a href="#" class="dropdown-item dropdown-item text-center">3D</a>
                             <a href="#" class="dropdown-item dropdown-item text-center">PixelArt</a>
@@ -71,7 +54,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-
 @endsection

@@ -95,10 +95,40 @@ footer .main-footer {
 
 .content {
   display: flex;
-  justify-content: center;
   bottom: 40px;
   position: absolute;
   width: 100%;
   color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  grid-template-areas: "main-box main-box main-box" "sidebox";
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 3fr, 1fr;
+}
+
+.grid img {
+  width: 200px;
+}
+
+.grid .main-box {
+  grid-column: 1/3;
+  grid-row: 1/4;
+}
+
+.grid .main-box .inside-box {
+  align-items: center;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1.8fr 0.5fr 1fr;
+}
+
+.grid .side-box {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1/2;
 }
 
