@@ -50,6 +50,18 @@
                         @endif
                         <button type="submit" class="btn btn-outline-success btn-block my-3"> Submit</button>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <select name="tags[]" id="" multiple>
+                                @foreach($tags as $tag)
+                                    <option class="form-control" value="$tag->id">{{$tag->name}}</option>
+                                @endforeach
+                            </select>
+                            @if($errors->has('tags'))
+                                <p>{{$errors->first('tags')}}</p>
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

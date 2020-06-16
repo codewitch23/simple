@@ -12,7 +12,11 @@
                 <p class="d-flex">{{$article->excerpt}}</p>
                 <p class="d-flex">{{$article->body}}</p>
             </div>
+            @foreach($article->tag as $tag)
+                <a href="/articles?tag={{$tag->name}}">{{$tag->name}} </a>
+            @endforeach
         </div>
 
     </div>
+
 @endsection

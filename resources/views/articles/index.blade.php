@@ -38,9 +38,9 @@
                         Platform
                     </button>
                     <div class="dropdown-menu btn py-2 ">
-                        <a href="#" class="dropdown-item dropdown-item  text-center">PC</a>
-                        <a href="#" class="dropdown-item dropdown-item text-center">PS4</a>
-                        <a href="#" class="dropdown-item dropdown-item  text-center">XBOX</a>
+                        @foreach($tags as $tag)
+                        <a href="/articles/?tag={{$tag->name}}" class="dropdown-item dropdown-item  text-center">{{$tag->name}}</a>
+                        @endforeach
                     </div>
                     <div class="dropdown-gener">
                         <button class="btn btn-outline-success dropdown-toggle btn-block" data-toggle="dropdown">

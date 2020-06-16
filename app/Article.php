@@ -12,7 +12,10 @@ class Article extends Model
     protected $fillable=['title','excerpt','body'];
 
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(User::class);
     }
 
+    public function tag(){
+        return $this->belongsToMany(Tag::class);
+    }
 }
