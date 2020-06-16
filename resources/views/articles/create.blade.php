@@ -52,14 +52,15 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
-                            <select name="tags[]" id="" multiple>
+                            <select name="tag[]"  multiple>
                                 @foreach($tags as $tag)
-                                    <option class="form-control" value="$tag->id">{{$tag->name}}</option>
+                                    <option value="{{$tag->id}}">{{$tag->name}}</option>
                                 @endforeach
                             </select>
-                            @if($errors->has('tags'))
-                                <p>{{$errors->first('tags')}}</p>
-                            @endif
+                            <p>
+                                {{$errors->first('tag')}}
+                            </p>
+
                         </div>
                     </div>
                 </div>

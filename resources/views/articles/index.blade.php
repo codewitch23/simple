@@ -22,14 +22,16 @@
     <div class="container">
         <div class="grid">
             <div class="main-box border-right border-info ">
-                @foreach($articles as $article)
+                @forelse($articles as $article)
                     <div class="inside-box ">
                         <a href="{{$article->path()}}"><h1>{{$article->title}}</h1></a>
                         <h1>1</h1>
                         <img src="img/need.jpg" alt="" class="img-thumbnail ">
                     </div>
                     <hr>
-                @endforeach
+                @empty
+                    <h2>No Relevant Article Yet .</h2>
+                @endforelse
             </div>
 
             <div class="side-box ">

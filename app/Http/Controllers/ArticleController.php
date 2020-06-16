@@ -29,12 +29,14 @@ class ArticleController extends Controller
         return view('articles.create', compact('tags'));
     }
 
-    public function store(Request $request)
+    public function store()
     {
-        $article = new Article($this->validateArticle());
+        $article = new Article(request(['title','excerpt','body']));
         $article->user_id=1;
         $article->save();
-        $article->tag()->attach(request('tags'));
+        $article->tag()->attach(request('tag'));
+
+//        dd(request()->all());
         return redirect($article->path());
     }
 
@@ -65,7 +67,7 @@ class ArticleController extends Controller
             'title' => 'required',
             'excerpt' => 'required',
             'body' => 'required',
-            'tags' => 'exists:tags,id'
+            'tag' => 'required'
         ]);
     }
 
